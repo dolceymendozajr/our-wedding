@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --light-color: #c0ac9e;
+  --dark-color: #9f9186;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/background.png");
+  background-position-y: 11%;
+  background-size: contain;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.header-container {
+  width: 100%;
+  text-align: center;
+  background-image: url("../assets/photos/DSC00358.JPG");
+  background-position: center 65%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+}
+
+.header-element > h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 8rem;
+  margin: 0px auto;
+  font-weight: 100;
+}
+
+.countdown {
+  background-color: var(--light-color);
+  height: 180px;
+}
+
+.countdown-container {
+  width: 60%;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+  text-align: center;
+}
+
+.countdown-item > span:first-child {
+  font-size: 3.5em;
+  font-weight: 300;
+}
+
+.row-container {
+  height: 300px;
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-container > h3 {
+  font-weight: 500;
+  margin-top: 0px;
+  font-family: "Great Vibes", sans-serif;
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+.row-container > p {
+  margin-bottom: 50px;
+}
+
+.row-container > a {
+  background-color: var(--dark-color);
+  border-style: solid;
+  border-width: 3px;
+  border-color: var(--dark-color);
+  border-radius: 10px;
+  padding: 16px 25px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+.row-container > a:hover {
+  background-color: transparent;
+}
+
+.spot {
+  height: 400px;
+}
+
+.spot > img {
+  width: 140px;
+  filter: sepia(0.4);
+  margin-top: 40px;
+}
+
+.spot > p {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.spot > a {
+  background-color: transparent;
+  color: var(--dark-color);
+}
+
+.spot > a:hover {
+  background-color: var(--dark-color);
+  color: white;
+}
+
+.shadow {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.light {
+  background-color: var(--light-color);
+}
+
+.dark {
+  background-color: var(--light-color);
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-container > .row-container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gallery-container > .row-container > p {
+  margin-bottom: 30px;
+}
+
+.gallery-container > img {
+  width: 140px;
+  filter: sepia(0.4);
+  margin-top: 50px;
+}
+
+.gallery-container > h3 {
+  margin-top: 0px;
+}
+
+#lightgallery {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.thumbnail {
+  width: 95%;
+}
+
+.image-link {
+  text-align: center;
+  width: 220px;
+}
+
+.ig-share{
+    background-image: url("../assets/photos/DSC00454.JPG");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center 55%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: flex-start;
+    padding-top: 55px;
+    color: white;
+}
+
+.ig-share > .row-container {
+    text-shadow: 2px 2px 10px black;
+}
+
+@media (max-width: 760px) {
+  .countdown-container {
+    width: 90%;
+  }
+}

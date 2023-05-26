@@ -269,6 +269,11 @@ section {
     background-position: center -10vh;
   }
 
+  .ig-share{
+    background-size: 80vh;
+    background-position: center -10vh;
+  }
+
   .header-element > h1 {
     font-size: 60px;
   }

@@ -215,4 +215,29 @@ section {
   .countdown-container {
     width: 90%;
   }
+
+  .header-container{
+    padding-top: 27vh;
+  }
+
+  .header-element > h1{
+    font-size: 60px;
+  }
+
+  .header-element > h3{
+    font-size: 20px;
+  }
+
+  .row-container{
+    height: 500px;
+    width: 80%;
+  }
+
+  .gallery-container > .row-container > p {
+    width: 80vw;
+  }
+
+  .image-link{
+    width: 33vw;
+  }
 }

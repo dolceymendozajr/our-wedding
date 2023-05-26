@@ -211,8 +211,12 @@ section {
   color: white;
 }
 
+.note,
 .disclaimer {
   font-size: 13px;
+}
+
+.disclaimer {
   width: 40%;
 }
 
@@ -269,7 +273,7 @@ section {
     background-position: center -10vh;
   }
 
-  .ig-share{
+  .ig-share {
     background-size: 80vh;
     background-position: center -10vh;
   }

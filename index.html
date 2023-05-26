@@ -50,16 +50,19 @@
         <div class="row-container spot">
             <img src="assets/bouquet.png" alt="">
             <h3>Lugar</h3>
-            <p>La ceremonia y la fiesta se celebrarán en la casa de eventos Altos de Pradomar. <br>Calle 3 #33 - 381,
-                Pradomar, Puerto Colombia.</p>
+            <p>La ceremonia y la fiesta se celebrarán en la casa de eventos Altos de Pradomar. <br>Calle 3 #33 -
+                381, Pradomar, Puerto Colombia. <br> <strong>Vestimenta </strong> Tropical glam</p>
             <a href="https://goo.gl/maps/tgZfS9k1XLxtS1LB9" target="_blank">Ver mapa</a>
+            <p class="disclaimer">Debido a razones de seguridad en nuestro lugar, no podemos extender esta
+                invitación a los niños.</p>
         </div>
     </section>
     <section class="row dark shadow">
         <div class="row-container">
             <h3>Confirmar Asistencia</h3>
-            <p>Por favor, confirmen su asistencia antes del <strong>15 de junio</strong> para que podamos hacer los arreglos necesarios. ¡No podemos esperar para celebrar juntos!</p>
-            <a href="google.com" target="_blank">Confirmar</a>
+            <p>Por favor, confirmen su asistencia antes del <strong>15 de junio</strong> para que podamos hacer los
+                arreglos necesarios. ¡No podemos esperar para celebrar juntos!</p>
+            <a id="invites" target="_blank">Confirmar</a>
         </div>
     </section>
     <section class="row ligth shadow gallery-row">
@@ -67,9 +70,10 @@
             <img src="assets/bouquet.png" alt="">
             <div class="row-container">
                 <h3>Nuestra historia</h3>
-                <p>En nuestras charlas, miradas y besos nos dimos cuenta que habiamos encontrado algo especial. Este
-                    tiempo
-                    compartido ha sido hermoso, y es apenas el principio de un nuevo viaje lleno de emociones</p>
+                <p>Desde una amistad llena de risas y complicidad, nuestro amor creció hasta convertirse en algo hermoso
+                    y eterno. Hoy, con gran emoción, los invitamos a celebrar el inicio de nuestro nuevo capítulo: el
+                    día en que uniremos nuestros destinos en matrimonio. Acompáñenos en este momento lleno de amor y
+                    felicidad mientras comenzamos juntos el viaje de nuestras vidas</p>
             </div>
             <div id="lightgallery">
                 <a class="image-link" href="assets/photos/DSC00403.JPG" data-lightbox="set">
@@ -97,26 +101,38 @@
         </div>
     </section>
     <section class="row dark shadow">
-        <div class="row-container">
-            <h3>¿Canciones que no pueden faltar?</h3>
-            <p>Puedes recomendar canciones o artistas que no pueden faltar en la boda</p>
-            <a href="google.com" target="_blank">Sugerir música</a>
+        <div class="row-container auto-height">
+            <h3>Regalo</h3>
+            <p>Si quieres, puedes hacernos un regalo para nuestra boda o luna de miel. Hace clic para ver nuestros datos
+                bancarios y hacer una transferencia o un depósito.</p>
+            <a onclick="toggleBankData()">Ver datos</a>
+            <span class="bank-data">
+                <h4>Bancolombia - Cuenta de Ahorros</h4>
+                <div class="clipboard">
+                    <p>912 32873 138</p><img id="account1" class="copy-clipboard" src="assets/copy.svg"
+                        onclick="copy('91232873138', this)">
+                </div>
+                <div class="clipboard">
+                    <p>767 00000 552</p><img id="account2" class="copy-clipboard" src="assets/copy.svg"
+                        onclick="copy('76700000552', this)">
+                </div>
+
+            </span>
 
         </div>
     </section>
     <section class="row ligth shadow">
         <div class="row-container">
-            <h3>Regalo</h3>
-            <p>Si quieres, puedes hacernos un regalo para nuestra boda o luna de miel. Hace clic para ver nuestros datos
-                bancarios y hacer una transferencia o un depósito.</p>
-            <a href="google.com" target="_blank">Ver datos</a>
+            <h3>#D&D</h3>
+            <p>Comparte con nosotros usando nuestro <strong>hashtag</strong> y disfrutemos juntos de este hermoso
+                momento.</p>
+            <a href="https://www.instagram.com/explore/tags/d%E2%9D%A4%EF%B8%8Fd_wedding/" target="_blank">Ver
+                hashtag</a>
         </div>
     </section>
     <section class="row ig-share">
         <div class="row-container">
-            <h3>#D&D</h3>
-            <p>Comparte con nosotros usando nuestro <strong>hashtag</strong> y disfrutemos juntos de este hermoso momento.</p>
-            <a href="google.com" target="_blank">Ver hashtag</a>
+            <h3>¡Te esperamos!</h3>
         </div>
     </section>
     <script src="js/lightbox-plus-jquery.min.js"></script>

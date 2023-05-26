@@ -2,8 +2,7 @@
 var countDownDate = new Date("Jul 8, 2023 16:00:00").getTime();
 
 // Update the count down every 1 second
-var x = setInterval(function() {
-
+var x = setInterval(function () {
   // Get today's date and time
   var now = new Date().getTime();
 
@@ -29,4 +28,32 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+document.addEventListener(
+  "DOMContentLoaded",
+  function () {
+    const forms = {
+      one: "https://forms.gle/gq7Dt8JAuRHVmsiz8",
+      double: "https://forms.gle/5nhXYGwweWFUjnJ28",
+    };
+
+    const inviteParams = new URLSearchParams(window.location.search).get(
+      "invites"
+    );
+    document.getElementById("invites").href =
+      inviteParams == "w"
+        ? forms.one
+        : inviteParams == "v"
+        ? forms.double
+        : "#";
+  },
+  false
+);
+
+function toggleBankData() {
+  document.getElementsByClassName("bank-data")[0].classList.toggle("visible");
+}
+
+function copy(data, event) {
+  navigator.clipboard.writeText(data);
+  event.style.opacity = ".4";
+}
